@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Comprehensive collection of acquired tech skills including languages, libraries, frameworks, and databases.adtabase i acquire.",
 };
 
-export const SkillsPage = () => {
+const SkillsPage = () => {
   return (
     <div className="h-[70vh] flex justify-center items-center">
       <div className="space-y-3 ">
