@@ -49,42 +49,14 @@ const NavDrawer = () => {
           </DrawerClose>
           <DrawerClose asChild>
             <ListItem
-              title="music"
-              href="/music"
-              className="relative z-10 hover:text-white hover:opacity-80"
-            >
-              <Image
-                className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-                src={music}
-                alt="music"
-                placeholder="blur"
-              />
-            </ListItem>
-          </DrawerClose>
-          <DrawerClose asChild>
-            <ListItem
-              title="anime"
-              href="/anime"
+              title="movies"
+              href="/movies"
               className="relative z-10 hover:text-white hover:opacity-80"
             >
               <Image
                 className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
                 src={anime}
-                alt="anime"
-                placeholder="blur"
-              />
-            </ListItem>
-          </DrawerClose>
-          <DrawerClose asChild>
-            <ListItem
-              title="books"
-              href="/books"
-              className="relative z-10 hover:text-white hover:opacity-80"
-            >
-              <Image
-                className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-                src={books}
-                alt="books"
+                alt="movies"
                 placeholder="blur"
               />
             </ListItem>
@@ -124,7 +96,7 @@ const NavDrawer = () => {
           <p className="font-bold py-4">Online</p>
           <Button variant="secondary">
             <a
-              href="http://github.com/arnvgh"
+              href={`${process.env.NEXT_PUBLIC_GITHUB}`}
               target="_blank"
               rel="noopener noreferrer"
               className="h-full w-full"
@@ -135,7 +107,7 @@ const NavDrawer = () => {
           </Button>
           <Button variant="secondary">
             <a
-              href="http://x.com/arnvgh"
+              href="http://x.com/Sidddabdullah"
               target="_blank"
               rel="noopener noreferrer"
               className="h-full w-full"
@@ -146,7 +118,7 @@ const NavDrawer = () => {
           </Button>
           <Button variant="secondary">
             <a
-              href="https://www.linkedin.com/in/arnvgh/"
+              href="https://www.linkedin.com/in/abdullahsidd/"
               rel="noopener noreferrer"
               className="h-full w-full"
             >

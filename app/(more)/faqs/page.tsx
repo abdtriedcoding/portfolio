@@ -8,12 +8,12 @@ import { faqs } from "./faqs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "arnvgh // faqs",
+  title: "abdullahsidd // faqs",
   description:
     "Redirected here? It means you have asked me something that has already been asked many times. Please don't think I am rude.",
 };
 
-const pinsPage = () => {
+const FaqsPage = () => {
   return (
     <section>
       <div className="pb-10">
@@ -23,12 +23,12 @@ const pinsPage = () => {
           of us. If you have any other inquiries, feel free to reach out to me
           at{" "}
           <a
-            href="http://x.com/arnvgh"
+            href="https://www.linkedin.com/in/abdullahsidd"
             target="_blank"
             rel="noopener noreferrer"
             className="link"
           >
-            @arnvgh
+            @abdullahsidd
           </a>
           {""}. Thanks!
         </p>
@@ -50,4 +50,4 @@ const pinsPage = () => {
   );
 };
 
-export default pinsPage;
+export default FaqsPage;

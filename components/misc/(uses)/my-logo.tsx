@@ -1,5 +1,3 @@
-import React from "react";
-
 export const MyLogo = () => {
   return (
     <div className="py-5 select-none">
@@ -14,4 +12,3 @@ export const MyLogo = () => {
     </div>
   );
 };
-
