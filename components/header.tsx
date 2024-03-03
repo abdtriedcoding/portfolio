@@ -1,7 +1,7 @@
-import ThemeSwitch from "@/components/misc/(theme)/theme-switch";
 import Navbar from "@/components/nav/navbar";
+import ThemeSwitch from "@/components/misc/(theme)/theme-switch";
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className="flex">
       <Navbar />
@@ -11,5 +11,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

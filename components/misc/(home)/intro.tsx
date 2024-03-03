@@ -26,7 +26,7 @@ export const Intro = () => {
         That&apos;s it. Feel free to reach me out at{" "}
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
-          href="https://www.linkedin.com/in/abdullahsidd"
+          href={`${process.env.NEXT_PUBLIC_LINKEDIN}`}
           target="_blank"
           rel="noopener noreferrer"
         >

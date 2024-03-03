@@ -30,12 +30,12 @@ const workPage = () => {
           <br />
           Always happy to discuss an idea — hit me a up at
           <a
-            href="https://www.linkedin.com/in/abdullahsidd"
+            href={`${process.env.NEXT_PUBLIC_LINKEDIN}`}
             className="link ml-1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @abdullahsidd
+            @abdtriedcoding
           </a>
           {""}.
         </p>

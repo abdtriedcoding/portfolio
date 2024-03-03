@@ -1,6 +1,5 @@
 "use client";
 
-import type { ComponentProps } from "react";
 import { useEffect, useState } from "react";
 
 const EMOJI = [
@@ -41,7 +40,7 @@ function getRandomEmoji(exclude?: string) {
   return emoji[Math.trunc(emoji.length * Math.random())];
 }
 
-export function Emoji(props: ComponentProps<"span">) {
+export function Emoji() {
   const [emoji, setEmoji] = useState(EMOJI[0]);
 
   useEffect(() => {
@@ -54,5 +53,5 @@ export function Emoji(props: ComponentProps<"span">) {
     };
   }, []);
 
-  return <span {...props}>{emoji}</span>;
+  return <span>{emoji}</span>;
 }

@@ -1,5 +1,5 @@
-import { TechStackIcons } from "@/components/misc/(uses)/techstack-icons";
 import { MyLogo } from "@/components/misc/(uses)/my-logo";
+import { TechStackIcons } from "@/components/misc/(uses)/techstack-icons";
 
 export const UsefulThings = () => {
   return (

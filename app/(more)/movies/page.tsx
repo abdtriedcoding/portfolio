@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import { Anime, AnimeData } from "./data";
-import { AnimeCard } from "@/components/misc/(movies)/movie-card";
+import { Movie, MovieData } from "./data";
+import { MovieCard } from "@/components/misc/(movies)/movie-card";
 
 export const metadata: Metadata = {
-  title: "abdullahsidd // movies",
+  title: "abdullah // movies",
   description: "Find a list of my fav and currently watching movies.",
 };
 
@@ -24,8 +24,8 @@ const MoviesPage = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-6">
-        {AnimeData.map((anime: Anime) => (
-          <AnimeCard
+        {MovieData.map((anime: Movie) => (
+          <MovieCard
             key={anime.href}
             title={anime.title}
             altTitle={anime.altTitle}
