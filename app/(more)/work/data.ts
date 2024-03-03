@@ -91,7 +91,7 @@ export const workData = [
   },
   {
     title: "Weather Web",
-    year: "2020",
+    year: "2023",
     shortDesc:
       "☁️ Stay informed with real-time weather updates worldwide! 🌍 Access accurate weather information for any location on our weather web website.",
     link: `${process.env.NEXT_PUBLIC_GITHUB}/Weather-Web`,

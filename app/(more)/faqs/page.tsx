@@ -23,12 +23,12 @@ const FaqsPage = () => {
           of us. If you have any other inquiries, feel free to reach out to me
           at{" "}
           <a
-            href="https://www.linkedin.com/in/abdullahsidd"
+            href={`${process.env.NEXT_PUBLIC_LINKEDIN}`}
             target="_blank"
             rel="noopener noreferrer"
             className="link"
           >
-            @abdullahsidd
+            @abdullah
           </a>
           {""}. Thanks!
         </p>

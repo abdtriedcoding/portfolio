@@ -3,7 +3,7 @@ import { skills } from "@/app/skills/data";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "abdullahsidd // skills",
+  title: "abdullah // skills",
   description:
     "Comprehensive collection of acquired tech skills including languages, libraries, frameworks, and databases.adtabase i acquire.",
 };

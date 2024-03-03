@@ -11,7 +11,7 @@ export const faqs: FaqTypes[] = [
   {
     question: "Can I see your resume?",
     answer:
-      "Certainly! If you're a recruiter, please contact me via email at <a target='_blank' class='link' href='mailto:siddabdullahofficial.com'>siddabdullahofficial.com</a>. You can also find my LinkedIn profile <a target='_blank' class='link' href='https://www.linkedin.com/in/abdullahsidd/'>here</a>.",
+      "Certainly! If you're a recruiter, please contact me via email at <a target='_blank' class='link' href='mailto:siddabdullahofficial.com'>siddabdullahofficial.com</a>. You can also find my LinkedIn profile <a target='_blank' class='link' href='https://www.linkedin.com/in/abdtriedcoding/'>here</a>.",
   },
   {
     question: "When did you start coding?",
@@ -52,6 +52,6 @@ export const faqs: FaqTypes[] = [
   {
     question: "How can I donate or sponsor you? Is there a way to do that?",
     answer:
-      "I appreciate your willingness to support me. You can sponsor me on my <a target='_blank' class='link' href=' https://github.com/sponsors/sidd-abdullah'>GitHub page</a>.",
+      "I appreciate your willingness to support me. You can sponsor me on my <a target='_blank' class='link' href=' https://github.com/sponsors/abdtriedcoding'>GitHub page</a>.",
   },
 ];

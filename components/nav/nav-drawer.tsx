@@ -105,7 +105,7 @@ const NavDrawer = () => {
           </Button>
           <Button variant="secondary">
             <a
-              href="http://x.com/Sidddabdullah"
+              href="http://x.com/abdtriedcoding"
               target="_blank"
               rel="noopener noreferrer"
               className="h-full w-full"
@@ -116,7 +116,7 @@ const NavDrawer = () => {
           </Button>
           <Button variant="secondary">
             <a
-              href="https://www.linkedin.com/in/abdullahsidd/"
+              href={`${process.env.NEXT_PUBLIC_LINKEDIN}`}
               rel="noopener noreferrer"
               className="h-full w-full"
             >
