@@ -1,12 +1,12 @@
 import "@/app/globals.css";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import PlausibleProvider from "next-plausible";
 import gradientImg from "@/public/gradient.webp";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { constructMetadata } from "@/lib/utils";
-import { Analytics } from "@/components/analytics";
 import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +20,9 @@ export const metadata = constructMetadata();
 export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <PlausibleProvider enabled domain="abdullahsidd.vercel.app" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -49,7 +52,6 @@ export default function RootLayout({ children }: ChildrenProps) {
           </noscript>
         </ThemeProvider>
       </body>
-      <Analytics />
     </html>
   );
 }
