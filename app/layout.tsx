@@ -1,6 +1,6 @@
 import "@/app/globals.css";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import PlausibleProvider from "next-plausible";
 import gradientImg from "@/public/gradient.webp";
 
@@ -9,7 +9,10 @@ import { Footer } from "@/components/footer";
 import { constructMetadata } from "@/lib/utils";
 import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Manrope({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 interface ChildrenProps {
   readonly children: React.ReactNode;
@@ -23,7 +26,7 @@ export default function RootLayout({ children }: ChildrenProps) {
       <head>
         <PlausibleProvider enabled domain="abdullahsidd.vercel.app" />
       </head>
-      <body className={inter.className}>
+      <body className={font.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
