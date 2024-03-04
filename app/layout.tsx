@@ -6,6 +6,7 @@ import gradientImg from "@/public/gradient.webp";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { constructMetadata } from "@/lib/utils";
+import { Analytics } from "@/components/analytics";
 import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: ChildrenProps) {
           </noscript>
         </ThemeProvider>
       </body>
+      <Analytics />
     </html>
   );
 }
