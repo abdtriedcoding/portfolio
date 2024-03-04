@@ -1,16 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+
 import { NavMenu } from "./navmenu";
 
-type navItems = {
-  name: string;
-  href: string;
-}[];
-
-const navItems: navItems = [
+const navItems = [
   { name: "~", href: "/" },
   { name: "about", href: "/about" },
   { name: "skills", href: "/skills" },

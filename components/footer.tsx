@@ -12,7 +12,7 @@ export const Footer = () => {
           <time className="hidden sm:inline" dateTime={String(year)}>
             {year}{" "}
           </time>
-          <span className="text-zinc-300 dark:text-zinc-600">—</span> he{" "}
+          <span className="text-zinc-300 dark:text-zinc-600">—</span> he
           <span className="text-zinc-300 dark:text-zinc-600">/</span>him
         </span>
         <a
