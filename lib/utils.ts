@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function constructMetadata({
-  title = "Abdullah",
+  title = "abdullah sidd",
   description = "19yo Software Engineer, India",
   image = "/socialphoto.webp",
   icons = [
