@@ -5,7 +5,7 @@ import fetcher from "@/lib/utils";
 import { DiscordLogoIcon } from "@radix-ui/react-icons";
 import useSWR from "swr";
 
-const DCStatus = () => {
+export const DCStatus = () => {
   const { data, isLoading, error } = useSWR<LanyardResponse>(
     "/api/discord",
     fetcher
@@ -21,5 +21,3 @@ const DCStatus = () => {
     </div>
   );
 };
-
-export default DCStatus;

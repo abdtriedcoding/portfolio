@@ -47,6 +47,14 @@ const Marquee = (props: MarqueeProps) => {
     className,
   } = props;
 
+  const ifToRightOrToBottom = (direction: string) => {
+    if (direction === "left") {
+      return "to right";
+    } else {
+      return "to bottom";
+    }
+  };
+
   return (
     <div
       className={cn(
@@ -58,12 +66,14 @@ const Marquee = (props: MarqueeProps) => {
       style={{
         maskImage: fade
           ? `linear-gradient(${
-              direction === "left" ? "to right" : "to bottom"
+              ifToRightOrToBottom(direction)
+              // direction === "left" ? "to right" : "to bottom"
             }, transparent 0%, rgba(0, 0, 0, 1.0) 10%, rgba(0, 0, 0, 1.0) 90%, transparent 100%)`
           : undefined,
         WebkitMaskImage: fade
           ? `linear-gradient(${
-              direction === "left" ? "to right" : "to bottom"
+              ifToRightOrToBottom(direction)
+              // direction === "left" ? "to right" : "to bottom"
             }, transparent 0%, rgba(0, 0, 0, 1.0) 10%, rgba(0, 0, 0, 1.0) 90%, transparent 100%)`
           : undefined,
       }}
@@ -88,7 +98,7 @@ const Marquee = (props: MarqueeProps) => {
   );
 };
 
-const StacksCard = () => {
+export const StacksCard = () => {
   return (
     <div className="p-1 flex h-36 flex-col gap-2 overflow-hidden rounded-xl border bg-[#f7f2f2] dark:bg-inherit">
       <p className="text-sm font-mono flex justify-center  text-zinc-600 dark:text-zinc-400">
@@ -126,4 +136,3 @@ const StacksCard = () => {
   );
 };
 
-export default StacksCard;

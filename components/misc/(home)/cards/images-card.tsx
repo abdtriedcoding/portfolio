@@ -1,14 +1,9 @@
 "use client";
 
-import * as React from "react";
+import Image from "next/image";
+import { useRef } from "react";
+
 import Autoplay from "embla-carousel-autoplay";
-import place1 from "@/public/images/places/place1.jpg";
-import place2 from "@/public/images/places/place2.jpg";
-import place3 from "@/public/images/places/place3.jpg";
-import place4 from "@/public/images/places/place4.jpg";
-import place5 from "@/public/images/places/place5.jpg";
-import place6 from "@/public/images/places/place6.jpg";
-import place7 from "@/public/images/places/place7.jpg";
 
 import {
   Carousel,
@@ -17,12 +12,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 
-export function PlacesCard() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
-  );
+import img1 from "@/public/images/(home)/0001.jpg";
+import img2 from "@/public/images/(home)/0002.jpg";
+import img3 from "@/public/images/(home)/0003.jpg";
+import img4 from "@/public/images/(home)/0004.jpg";
+import img5 from "@/public/images/(home)/0005.jpg";
+import img6 from "@/public/images/(home)/0006.jpg";
+import img7 from "@/public/images/(home)/0007.jpg";
+
+export const ImagesCard = () => {
+  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
 
   return (
     <Carousel
@@ -35,7 +35,7 @@ export function PlacesCard() {
         <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
-              src={place1}
+              src={img1}
               alt=""
               className="rounded-lg object-cover h-36 w-full md:max-w-xs "
               placeholder="blur"
@@ -46,7 +46,7 @@ export function PlacesCard() {
         <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
-              src={place2}
+              src={img2}
               alt=""
               className="rounded-lg object-cover h-36 w-full md:max-w-xs"
               placeholder="blur"
@@ -56,7 +56,7 @@ export function PlacesCard() {
         <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
-              src={place3}
+              src={img3}
               alt=""
               className="rounded-lg object-cover h-36 w-full md:max-w-xs"
               placeholder="blur"
@@ -66,7 +66,7 @@ export function PlacesCard() {
         <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
-              src={place4}
+              src={img4}
               alt=""
               className="rounded-lg object-cover h-36 w-full md:max-w-xs"
               placeholder="blur"
@@ -76,7 +76,7 @@ export function PlacesCard() {
         <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
-              src={place5}
+              src={img5}
               alt=""
               className="rounded-lg object-cover h-36 w-full md:max-w-xs"
               placeholder="blur"
@@ -86,7 +86,7 @@ export function PlacesCard() {
         <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
-              src={place6}
+              src={img6}
               alt=""
               className="rounded-lg object-cover h-36 w-full md:max-w-xs"
               placeholder="blur"
@@ -96,7 +96,7 @@ export function PlacesCard() {
         <CarouselItem className="h-36">
           <div className="rounded-lg text-card-foreground">
             <Image
-              src={place7}
+              src={img7}
               alt=""
               className="rounded-lg object-cover h-36 w-full md:max-w-xs"
               placeholder="blur"
@@ -108,4 +108,4 @@ export function PlacesCard() {
       <CarouselNext className="absolute bottom-3 right-3" />
     </Carousel>
   );
-}
+};

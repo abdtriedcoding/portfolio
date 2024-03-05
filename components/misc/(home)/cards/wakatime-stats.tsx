@@ -47,7 +47,7 @@ const getCodingHrs = cache(
   }
 );
 
-const WakatimeStats = async () => {
+export const WakatimeStats = async () => {
   const { seconds } = await getCodingHrs();
 
   return (
@@ -59,12 +59,10 @@ const WakatimeStats = async () => {
       <div className="h-[4.125rem] flex flex-col justify-center items-center rounded-lg text-white bg-[#242938] dark:bg-[#222222]">
         <span className="font-semibold items-center">
           <Code2 className="inline-block mr-1 -mt-[0.15rem]" size={18} />
-          {Math.round((seconds as number) / 3600)}
+          {Math.round((seconds) / 3600)}
         </span>
         <span className="text-sm">coding hrs</span>
       </div>
     </a>
   );
 };
-
-export default WakatimeStats;

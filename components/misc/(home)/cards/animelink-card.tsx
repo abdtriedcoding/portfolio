@@ -3,7 +3,7 @@ import Image from "next/image";
 import animePic from "@/public/images/anime.webp";
 import { ArrowUpRight } from "lucide-react";
 
-const AnimeCard = () => {
+export const AnimeLinkCard = () => {
   return (
     <Link href={"/anime"}>
       <div className="h-36 group rounded-lg relative">
@@ -20,5 +20,3 @@ const AnimeCard = () => {
     </Link>
   );
 };
-
-export default AnimeCard;
