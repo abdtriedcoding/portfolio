@@ -30,7 +30,7 @@ export const Intro = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          @abdullahsidd
+          @abdullah
         </a>
         or
         <a
