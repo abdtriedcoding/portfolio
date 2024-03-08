@@ -5,6 +5,7 @@ import gradientImg from "@/public/gradient.webp";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { constructMetadata } from "@/lib/utils";
 import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,6 +13,8 @@ const inter = Inter({ subsets: ["latin"] });
 interface ChildrenProps {
   readonly children: React.ReactNode;
 }
+
+export const metadata = constructMetadata();
 
 export default function RootLayout({ children }: ChildrenProps) {
   return (
