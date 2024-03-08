@@ -1,47 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/app/globals.css";
-import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
-import Header from "@/components/layouts/header";
-import { Footer } from "@/components/layouts/footer";
 import Image from "next/image";
-import { Analytics } from "@/components/misc/analytics";
+import { Inter } from "next/font/google";
 import gradientImg from "@/public/images/gradient.webp";
 
+import Header from "@/components/header";
+import { Footer } from "@/components/footer";
+import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
+
 const inter = Inter({ subsets: ["latin"] });
-
-const info = {
-  name: "Arunava Ghosh",
-  twitter: "@arnvgh",
-  description: "19yo Software Engineer, India",
-  url: "https://arnvgh.me",
-  image: "/meta/meta.png",
-};
-
-export const metadata: Metadata = {
-  metadataBase: new URL(info.url),
-  title: info.name,
-  description: info.description,
-  authors: {
-    name: info.name,
-    url: info.url,
-  },
-  creator: info.name,
-  openGraph: {
-    type: "website",
-    url: info.url,
-    title: info.name,
-    description: info.description,
-    images: info.image,
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: info.name,
-    description: info.description,
-    creator: info.twitter,
-    images: info.image,
-  },
-};
 
 interface ChildrenProps {
   readonly children: React.ReactNode;
@@ -79,17 +45,6 @@ export default function RootLayout({ children }: ChildrenProps) {
           </noscript>
         </ThemeProvider>
       </body>
-      <Analytics />
-      <link
-        href="/favicons/favicon-light.ico"
-        rel="icon"
-        media="(prefers-color-scheme: light)"
-      />
-      <link
-        href="/favicons/favicon-dark.ico"
-        rel="icon"
-        media="(prefers-color-scheme: dark)"
-      />
     </html>
   );
 }

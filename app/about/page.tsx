@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "arnvgh // about",
+  title: "abdullahsidd // about",
   description: "Most of the things you (maybe) want to know about me.",
 };
 
-const aboutPage = () => {
+const AboutPage = () => {
   return (
     <div className="md:mt-8 lg:mt-10 pt-8 pb-16">
       <h1 className="text-2xl font-bold pb-8">About</h1>
@@ -17,25 +17,31 @@ const aboutPage = () => {
           </h2>
           <div className="flex flex-col gap-6">
             <p>
-              Hi there<span className="wave mx-1">👋🏻</span> I&apos;m Arunava, a
-              19-year-old guy, passionate about computers.
+              Hi there<span className="wave mx-1">👋🏻</span> I&apos;m Abdullah
+              Sidd, a 19-year-old guy, passionate about programming.
             </p>
             <p>
-              My journey began in 6th or 7th grade when I installed Linux on my
-              computer, seeking something new beyond the dull Windows
-              environment. Since then, I&apos;ve never looked back. I got into
-              the terminal, learned Python, engaged in basic shell scripting,
-              automated stuff, scraped websites, tweaked system services, and
-              enjoyed breaking stuff to understand how things work.
+              My interest in computers started at a very young age, and I was
+              very eager to learn as much as I could about them. I remember my
+              first website that I made years ago, which had a terrible
+              interface and design.I have always had a strong interest in
+              computers and technology. From a young age, I was eager to learn
+              as much as possible. One of my earliest experiences with computers
+              was creating my own portfolio website.
             </p>
             <p>
-              Later, I explored web development, working with various
-              technologies, libraries, and frameworks. I learned about backend
-              operations, databases, scalability, and real-time communications.
+              After this, I became more and more interested in web development
+              and began to find resources to learn more about it. I watched many
+              video tutorials, read through documentation and articles. The
+              first programming language I learned was C, and from there, I also
+              learned Python and Java but find in love with javascript. In
+              addition to working with programming languages, I have also
+              experimented with databases and have found that Firebase is my
+              favorite so far. I have also used MySQL and Supabase few time.
             </p>
             <p>
-              Currently, I&apos;m engaged in the startup world, working with
-              cloud platforms, and doing freelancing on the side.
+              Currently, I&apos;m looking for an intern position as a full stack
+              developer.
             </p>
           </div>
         </section>
@@ -47,16 +53,13 @@ const aboutPage = () => {
             <p>
               As a full-stack developer, my primary focus involves handling both
               backend operations and user interface development. For robust
-              tasks requiring performance and scalability, I rely on Golang,
-              while for typical backend functionalities, I turn to NodeJS.
-              Additionally, I use React (Next.js) for creating user interfaces,
-              and I enhance the styling with TailwindCSS.
+              tasks requiring performance and scalability,I use React (Next.js)
+              for creating user interfaces, and I enhance the styling with
+              TailwindCSS and mostly Firebase for backend operations.
             </p>
             <p>
-              I have several years of experience working with these
-              technologies, as well as experience in other languages such as
-              TypeScript, Python, C++, Elixir, and Rust, ranked in order from
-              most to least experienced.
+              I have 3 years of experience working with these technologies, as
+              well as experience in other languages such as TypeScript.
             </p>
             <p>
               In a nutshell, I&apos;m all about breaking down complex tech
@@ -69,4 +72,4 @@ const aboutPage = () => {
   );
 };
 
-export default aboutPage;
+export default AboutPage;

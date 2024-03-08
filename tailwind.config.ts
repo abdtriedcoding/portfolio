@@ -87,9 +87,6 @@ const config = {
     },
   },
   plugins: [animate, typography],
-  experimental: {
-    optimizeUniversalDefaults: true,
-  },
   future: {
     hoverOnlyWhenSupported: true,
   },

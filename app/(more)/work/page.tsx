@@ -11,8 +11,8 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "arnvgh // work",
-  description: "Find a list of all my projects here.",
+  title: "abdullahsidd // work",
+  description: "Find a list of my few projects here.",
 };
 
 const workPage = () => {
@@ -26,23 +26,26 @@ const workPage = () => {
         <br />
         <br />
         <p>
-          As a student, I might not have the time for full-time projects, but
-          who knows 🤭?
+          As a student, I am now interested in doing internship 🤭?
           <br />
           Always happy to discuss an idea — hit me a up at
           <a
-            href="http://x.com/arnvgh"
+            href="https://www.linkedin.com/in/abdullahsidd"
             className="link ml-1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @arnvgh
-          </a>{""}
-          .
+            @abdullahsidd
+          </a>
+          {""}.
         </p>
       </div>
-      <Table className="">
-        <TableCaption>A list of my projects.</TableCaption>
+      <Table>
+        <TableCaption>
+          A list of my few projects ranked such that it represent how complex
+          projects i made over a period of time, showing my journey as starting
+          from junior to mid level self taught developer.
+        </TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px]">Project</TableHead>

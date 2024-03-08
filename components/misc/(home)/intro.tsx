@@ -2,13 +2,11 @@ export const Intro = () => {
   return (
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5">
+        <p>Turning Web Dreams into Reality, Just Like Tony Stark's Vision</p>
         <p>
-          I design, craft and publish products of quality and reliability,
-          specializing in scalable real-time systems & networking.
-        </p>
-        <p>
-          A chess enthusiast and competitive programmer. I thrive in the Linux
-          and Vim ecosystem, embracing a terminal-centric lifestyle.
+          I&apos;m a full stack developer passionate about programming.
+          Proficient in React.js/Next.js, other javascript technologies for
+          crafting web interfaces & functionality.
         </p>
       </div>
       <svg
@@ -28,20 +26,20 @@ export const Intro = () => {
         That&apos;s it. Feel free to reach me out at{" "}
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
-          href="http://x.com/arnvgh"
+          href="https://www.linkedin.com/in/abdullahsidd"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @arnvgh
+          @abdullahsidd
         </a>
         or
         <a
           className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-          href="mailto:arnvgh@gmail.com"
+          href="mailto:siddabdullahofficial@gmail.com"
         >
-          arnvgh@gmail.com
+          siddabdullahofficial@gmail.com
         </a>
-        {""}.
+        .
       </div>
     </section>
   );

@@ -70,18 +70,6 @@ export function NavMenu() {
                   placeholder="blur"
                 />
               </ListItem>
-              <ListItem
-                title="music"
-                href="/music"
-                className="relative z-10 hover:text-white hover:opacity-80"
-              >
-                <Image
-                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-                  src={music}
-                  alt="music"
-                  placeholder="blur"
-                />
-              </ListItem>
 
               <ListItem
                 title="anime"
@@ -95,18 +83,7 @@ export function NavMenu() {
                   placeholder="blur"
                 />
               </ListItem>
-              <ListItem
-                title="books"
-                href="/books"
-                className="relative z-10 hover:text-white hover:opacity-80"
-              >
-                <Image
-                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-                  src={books}
-                  alt="books"
-                  placeholder="blur"
-                />
-              </ListItem>
+
               <ListItem
                 title="uses"
                 href="/uses"

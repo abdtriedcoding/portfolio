@@ -1,12 +1,12 @@
-import { UsesTabs } from "@/components/misc/(uses)/uses-tab";
 import { Metadata } from "next/types";
+import { UsefulThings } from "@/components/misc/(uses)/useful-things";
 
 export const metadata: Metadata = {
-  title: "arnvgh // uses",
+  title: "abdullahsidd // uses",
   description: "A list of software and hardware that I use.",
 };
 
-const usesPage = () => {
+const UsesPage = () => {
   return (
     <section>
       <div className="pb-5">
@@ -22,9 +22,9 @@ const usesPage = () => {
           anything, please let me know.
         </p>
       </div>
-      <UsesTabs />
+      <UsefulThings />
     </section>
   );
 };
 
-export default usesPage;
+export default UsesPage;
