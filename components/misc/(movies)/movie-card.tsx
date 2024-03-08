@@ -1,12 +1,12 @@
-import { Anime } from "@/app/(more)/movies/data";
+import { Movie } from "@/app/(more)/movies/data";
 
-export const AnimeCard = ({
+export const MovieCard = ({
   title,
   href,
   imgName,
   altTitle,
   starred,
-}: Anime) => {
+}: Movie) => {
   const altTitleElement = altTitle ? (
     <div className="text-xs text-gray-900 dark:text-gray-200 italic font-semibold opacity-75">
       ({altTitle})

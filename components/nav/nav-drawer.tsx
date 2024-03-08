@@ -10,12 +10,10 @@ import {
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import work from "@/public/images/(nav)/work.webp";
-import books from "@/public/images/(nav)/books.webp";
-import anime from "@/public/images/(nav)/anime.webp";
-import music from "@/public/images/(nav)/music.webp";
-import faqs from "@/public/images/(nav)/faqs.webp";
-import uses from "@/public/images/(nav)/uses.webp";
+import work from "@/public/nav/work.webp";
+import movie from "@/public/nav/movie.webp";
+import faqs from "@/public/nav/faqs.webp";
+import uses from "@/public/nav/uses.webp";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { ArrowUpRight, Github, Linkedin, Twitter } from "lucide-react";
@@ -55,7 +53,7 @@ const NavDrawer = () => {
             >
               <Image
                 className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-                src={anime}
+                src={movie}
                 alt="movies"
                 placeholder="blur"
               />

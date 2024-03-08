@@ -1,9 +1,9 @@
 import "@/app/globals.css";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import gradientImg from "@/public/images/gradient.webp";
+import gradientImg from "@/public/gradient.webp";
 
-import Header from "@/components/header";
+import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
 

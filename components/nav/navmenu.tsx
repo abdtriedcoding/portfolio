@@ -15,12 +15,10 @@ import {
 
 import Image from "next/image";
 
-import work from "@/public/images/(nav)/work.webp";
-import books from "@/public/images/(nav)/books.webp";
-import anime from "@/public/images/(nav)/anime.webp";
-import music from "@/public/images/(nav)/music.webp";
-import faqs from "@/public/images/(nav)/faqs.webp";
-import uses from "@/public/images/(nav)/uses.webp";
+import work from "@/public/nav/work.webp";
+import movie from "@/public/nav/movie.webp";
+import faqs from "@/public/nav/faqs.webp";
+import uses from "@/public/nav/uses.webp";
 import NavDrawer from "./nav-drawer";
 
 export function NavMenu() {
@@ -72,13 +70,13 @@ export function NavMenu() {
               </ListItem>
 
               <ListItem
-                title="anime"
-                href="/anime"
+                title="movies"
+                href="/movies"
                 className="relative z-10 hover:text-white hover:opacity-80"
               >
                 <Image
                   className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-                  src={anime}
+                  src={movie}
                   alt="anime"
                   placeholder="blur"
                 />

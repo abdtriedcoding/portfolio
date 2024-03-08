@@ -17,8 +17,8 @@ const AboutPage = () => {
           </h2>
           <div className="flex flex-col gap-6">
             <p>
-              Hi there<span className="wave mx-1">👋🏻</span> I&apos;m Abdullah
-              Sidd, a 19-year-old guy, passionate about programming.
+              Hi there<span className="wave mx-1">👋🏻</span> I&apos;m Abdullah, a
+              19-year-old guy, passionate about programming.
             </p>
             <p>
               My interest in computers started at a very young age, and I was
@@ -55,7 +55,7 @@ const AboutPage = () => {
               backend operations and user interface development. For robust
               tasks requiring performance and scalability,I use React (Next.js)
               for creating user interfaces, and I enhance the styling with
-              TailwindCSS and mostly Firebase for backend operations.
+              TailwindCss and mostly Firebase for backend operations.
             </p>
             <p>
               I have 3 years of experience working with these technologies, as

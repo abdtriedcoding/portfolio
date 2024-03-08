@@ -2,7 +2,7 @@ import { Metadata } from "next/types";
 import { UsefulThings } from "@/components/misc/(uses)/useful-things";
 
 export const metadata: Metadata = {
-  title: "abdullahsidd // uses",
+  title: "abdullah // uses",
   description: "A list of software and hardware that I use.",
 };
 

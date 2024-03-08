@@ -1,4 +1,4 @@
-export interface Anime {
+export interface Movie {
   title: string;
   altTitle?: string;
   href: string;
@@ -6,7 +6,7 @@ export interface Anime {
   starred?: boolean;
 }
 
-export const AnimeData: Anime[] = [
+export const MovieData: Movie[] = [
   {
     title: "Serial Experiments Lain",
     href: "https://myanimelist.net/anime/339/Serial_Experiments_Lain",

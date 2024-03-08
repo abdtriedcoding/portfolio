@@ -1,25 +1,10 @@
-import { clsx } from "clsx";
-import type { ComponentProps } from "react";
 import { Emoji } from "@/components/emoji";
 
-function getLatestCommit() {
-  const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
-  const label = sha ? sha.slice(0, 7) : null;
-  return label;
-}
-
-export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
-  const commit = getLatestCommit();
+export const Footer = () => {
   const year = String(new Date().getFullYear());
 
   return (
-    <footer
-      className={clsx(
-        "flex flex-col font-medium text-zinc-700 dark:text-zinc-100 md:pt-0 pt-5",
-        className
-      )}
-      {...props}
-    >
+    <footer className="flex flex-col font-medium text-zinc-700 dark:text-zinc-100 md:pt-0 pt-5">
       <hr className="w-full border-t border-zinc-150 dark:border-zinc-800" />
       <div className="flex items-center pt-2">
         <span>
@@ -32,7 +17,7 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
         </span>
         <a
           className="link ml-auto inline-flex items-center gap-1.5"
-          href="https://github.com/arnvgh/www"
+          href={`${process.env.NEXT_PUBLIC_GITHUB}`}
           rel="noreferrer"
           target="_blank"
         >
@@ -49,12 +34,7 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
               fillRule="evenodd"
             />
           </svg>
-          <span>
-            <span>arnvgh.me</span>
-            <span className="hidden text-zinc-350 dark:text-zinc-450 sm:inline">
-              #{commit}
-            </span>
-          </span>
+          <span>@abdullah</span>
         </a>
       </div>
     </footer>
