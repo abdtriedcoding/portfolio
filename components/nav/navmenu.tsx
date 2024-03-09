@@ -1,9 +1,10 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { forwardRef, useEffect, useState } from "react";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,8 +14,6 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-import Image from "next/image";
-
 import work from "@/public/nav/work.webp";
 import movie from "@/public/nav/movie.webp";
 import faqs from "@/public/nav/faqs.webp";
@@ -22,11 +21,11 @@ import uses from "@/public/nav/uses.webp";
 import NavDrawer from "./nav-drawer";
 
 export function NavMenu() {
-  const [isMobile, setIsMobile] = React.useState(
+  const [isMobile, setIsMobile] = useState(
     typeof window !== "undefined" && window.innerWidth < 1024
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth < 1024);
     }
@@ -115,7 +114,7 @@ export function NavMenu() {
   );
 }
 
-const ListItem = React.forwardRef<
+const ListItem = forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {

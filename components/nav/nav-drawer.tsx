@@ -1,3 +1,15 @@
+import Link from "next/link";
+import Image from "next/image";
+import { cn } from "@/lib/utils";
+import { forwardRef } from "react";
+import {
+  ArrowUpRight,
+  Github,
+  Linkedin,
+  Twitter,
+  ChevronDown,
+} from "lucide-react";
+
 import {
   Drawer,
   DrawerClose,
@@ -7,17 +19,12 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
 import work from "@/public/nav/work.webp";
 import movie from "@/public/nav/movie.webp";
 import faqs from "@/public/nav/faqs.webp";
 import uses from "@/public/nav/uses.webp";
-import { cn } from "@/lib/utils";
-import React from "react";
-import { ArrowUpRight, Github, Linkedin, Twitter } from "lucide-react";
-import { ChevronDown } from "lucide-react";
 
 const NavDrawer = () => {
   return (
@@ -132,7 +139,7 @@ const NavDrawer = () => {
 
 export default NavDrawer;
 
-export const ListItem = React.forwardRef<
+export const ListItem = forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {
