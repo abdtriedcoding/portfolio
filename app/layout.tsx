@@ -1,8 +1,9 @@
 import "@/app/globals.css";
+import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import PlausibleProvider from "next-plausible";
 import gradientImg from "@/public/gradient.webp";
+import { Partytown } from "@builder.io/partytown/react";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -20,9 +21,15 @@ export const metadata = constructMetadata();
 export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <PlausibleProvider enabled domain="abdullahsidd.vercel.app" />
-      </head>
+      <Head>
+        <Partytown debug={true} forward={["dataLayer.push"]} />
+        <script
+          defer
+          data-domain="abdullahsidd.vercel.app"
+          src="https://plausible.io/js/script.js"
+          type="text/partytown"
+        />
+      </Head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
