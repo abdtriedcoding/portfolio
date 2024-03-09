@@ -1,19 +1,7 @@
 import Image from "next/image";
 import { Movie } from "@/app/(more)/movies/data";
 
-export const MovieCard = ({
-  title,
-  href,
-  imgName,
-  altTitle,
-  starred,
-  movieImage,
-}: Movie) => {
-  const altTitleElement = altTitle ? (
-    <div className="text-xs text-gray-900 dark:text-gray-200 italic font-semibold opacity-75">
-      ({altTitle})
-    </div>
-  ) : null;
+export const MovieCard = ({ title, href, imgName, movieImage }: Movie) => {
   return (
     <a
       href={href}
@@ -28,7 +16,7 @@ export const MovieCard = ({
         placeholder="blur"
       />
       <div className="transition duration-300 ease-in-out opacity-0 group-hover:opacity-100 ml-0 sm:ml-4 z-40 text-2xl my-auto font-bold">
-        <div>{title}</div> {altTitleElement}
+        <div>{title}</div>
       </div>
     </a>
   );
