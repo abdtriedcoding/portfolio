@@ -32,6 +32,7 @@ const MoviesPage = () => {
             href={movie.href}
             imgName={movie.imgName}
             starred={movie.starred}
+            movieImage={movie.movieImage}
           />
         ))}
       </div>

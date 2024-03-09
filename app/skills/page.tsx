@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 
 const SkillsPage = () => {
   return (
-    <div className="h-[70vh] flex justify-center items-center">
+    <div className="h-[70vh] flex flex-col justify-center items-center">
+      <h1 className="text-2xl font-bold pb-8 text-left w-full">Skills</h1>
       <div className="space-y-3 ">
         {skills.map((skill) => (
           <Button variant={"outline"} className="mr-3" key={skill}>
