@@ -11,7 +11,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "abdullah // work",
+  title: "abdullah sidd // work",
   description: "Find a list of my few projects here.",
 };
 
@@ -35,7 +35,7 @@ const workPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            @abdullah
+            @abdullahsidd
           </a>
           {""}.
         </p>

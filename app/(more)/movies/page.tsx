@@ -3,7 +3,7 @@ import { Movie, MovieData } from "./data";
 import { MovieCard } from "@/components/misc/(movies)/movie-card";
 
 export const metadata: Metadata = {
-  title: "abdullah // movies",
+  title: "abdullah sidd // movies",
   description: "Find a list of my fav and currently watching movies.",
 };
 

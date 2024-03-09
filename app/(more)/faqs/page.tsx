@@ -8,7 +8,7 @@ import { faqs } from "./faqs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "abdullah // faqs",
+  title: "abdullah sidd // faqs",
   description:
     "Redirected here? It means you have asked me something that has already been asked many times. Please don't think I am rude.",
 };
@@ -28,7 +28,7 @@ const FaqsPage = () => {
             rel="noopener noreferrer"
             className="link"
           >
-            @abdullah
+            @abdullahsidd
           </a>
           {""}. Thanks!
         </p>

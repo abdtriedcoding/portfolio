@@ -11,7 +11,7 @@ export const faqs: FaqTypes[] = [
   {
     question: "Can I see your resume?",
     answer:
-      "Certainly! If you're a recruiter, please contact me via email at <a target='_blank' class='link' href='mailto:siddabdullahofficial.com'>siddabdullahofficial.com</a>. You can also find my LinkedIn profile <a target='_blank' class='link' href='https://www.linkedin.com/in/abdtriedcoding/'>here</a>.",
+      "Certainly! If you're a recruiter, please contact me via email at <a target='_blank' class='link' href='mailto:siddabdullahofficial.com'>siddabdullahofficial.com</a>. You can also find my LinkedIn profile <a target='_blank' class='link' href='https://www.linkedin.com/in/abdtriedcoding'>here</a>.",
   },
   {
     question: "When did you start coding?",

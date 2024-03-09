@@ -34,7 +34,7 @@ export const Footer = () => {
               fillRule="evenodd"
             />
           </svg>
-          <span>@abdullah</span>
+          <span>@abdullahsidd</span>
         </a>
       </div>
     </footer>
